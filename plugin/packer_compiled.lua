@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/xander/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/xander/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/xander/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/xander/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/xander/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/xander/.cache/nvim/packer_hererocks/2.1.1716656478/share/lua/5.1/?.lua;/home/xander/.cache/nvim/packer_hererocks/2.1.1716656478/share/lua/5.1/?/init.lua;/home/xander/.cache/nvim/packer_hererocks/2.1.1716656478/lib/luarocks/rocks-5.1/?.lua;/home/xander/.cache/nvim/packer_hererocks/2.1.1716656478/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/xander/.cache/nvim/packer_hererocks/2.1.1716656478/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -75,7 +75,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["Comment.nvim"] = {
-    config = { "\27LJ\2\2h\0\0\3\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\1K\0\1\0\ropleader\1\0\0\1\0\2\nblock\agb\tline\14<leader>/\nsetup\fComment\frequire\0" },
+    config = { "\27LJ\2\nr\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\ropleader\1\0\1\ropleader\0\1\0\2\nblock\agb\tline\14<leader>/\nsetup\fComment\frequire\0" },
     loaded = true,
     path = "/home/xander/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
@@ -131,7 +131,7 @@ _G.packer_plugins = {
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["gruvbox-baby"] = {
-    config = { "\27LJ\2\2û\1\0\0\4\0\v\0\0266\0\0\0009\0\1\0'\1\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\5\0005\3\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\a\0005\3\b\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\t\0005\3\n\0B\0\4\1K\0\1\0\1\0\2\tbold\1\afg\f#928374\16LineNrBelow\1\0\2\tbold\2\afg\f#8ec07c\vLineNr\1\0\2\tbold\1\afg\f#928374\16LineNrAbove\16nvim_set_hl\bapi\29colorscheme gruvbox-baby\bcmd\bvim\0" },
+    config = { "\27LJ\2\nû\1\0\0\5\0\v\0\0266\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\5\0005\4\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\a\0005\4\b\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\t\0005\4\n\0B\0\4\1K\0\1\0\1\0\2\afg\f#928374\tbold\1\16LineNrBelow\1\0\2\afg\f#8ec07c\tbold\2\vLineNr\1\0\2\afg\f#928374\tbold\1\16LineNrAbove\16nvim_set_hl\bapi\29colorscheme gruvbox-baby\bcmd\bvim\0" },
     loaded = true,
     path = "/home/xander/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
     url = "https://github.com/luisiacc/gruvbox-baby"
@@ -206,11 +206,11 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\2h\0\0\3\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\1K\0\1\0\ropleader\1\0\0\1\0\2\nblock\agb\tline\14<leader>/\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+try_loadstring("\27LJ\2\nr\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\ropleader\1\0\1\ropleader\0\1\0\2\nblock\agb\tline\14<leader>/\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
 -- Config for: gruvbox-baby
 time([[Config for gruvbox-baby]], true)
-try_loadstring("\27LJ\2\2û\1\0\0\4\0\v\0\0266\0\0\0009\0\1\0'\1\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\5\0005\3\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\a\0005\3\b\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\t\0005\3\n\0B\0\4\1K\0\1\0\1\0\2\tbold\1\afg\f#928374\16LineNrBelow\1\0\2\tbold\2\afg\f#8ec07c\vLineNr\1\0\2\tbold\1\afg\f#928374\16LineNrAbove\16nvim_set_hl\bapi\29colorscheme gruvbox-baby\bcmd\bvim\0", "config", "gruvbox-baby")
+try_loadstring("\27LJ\2\nû\1\0\0\5\0\v\0\0266\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\5\0005\4\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\a\0005\4\b\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\t\0005\4\n\0B\0\4\1K\0\1\0\1\0\2\afg\f#928374\tbold\1\16LineNrBelow\1\0\2\afg\f#8ec07c\tbold\2\vLineNr\1\0\2\afg\f#928374\tbold\1\16LineNrAbove\16nvim_set_hl\bapi\29colorscheme gruvbox-baby\bcmd\bvim\0", "config", "gruvbox-baby")
 time([[Config for gruvbox-baby]], false)
 
 _G._packer.inside_compile = false

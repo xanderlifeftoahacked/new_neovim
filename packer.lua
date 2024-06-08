@@ -73,12 +73,6 @@ return require('packer').startup(function(use)
 	  }
   }
 
-	require'cmp'.setup {
-		sources = {
-			{ name = 'path' }
-		}
-	}
-
   use "m4xshen/autoclose.nvim"
 
   end)
