@@ -95,6 +95,12 @@ _G.packer_plugins = {
     path = "/home/xander/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
+  catppuccin = {
+    config = { "\27LJ\2\nÿ\1\0\0\5\0\v\0\0266\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\5\0005\4\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\a\0005\4\b\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\t\0005\4\n\0B\0\4\1K\0\1\0\1\0\2\tbold\1\afg\f#928374\16LineNrBelow\1\0\2\tbold\2\afg\f#8ec07c\vLineNr\1\0\2\tbold\1\afg\f#928374\16LineNrAbove\16nvim_set_hl\bapi!colorscheme catppuccin-mocha\bcmd\bvim\0" },
+    loaded = true,
+    path = "/home/xander/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/xander/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -129,12 +135,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/xander/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
-  },
-  ["gruvbox-baby"] = {
-    config = { "\27LJ\2\nû\1\0\0\5\0\v\0\0266\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\5\0005\4\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\a\0005\4\b\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\t\0005\4\n\0B\0\4\1K\0\1\0\1\0\2\afg\f#928374\tbold\1\16LineNrBelow\1\0\2\afg\f#8ec07c\tbold\2\vLineNr\1\0\2\afg\f#928374\tbold\1\16LineNrAbove\16nvim_set_hl\bapi\29colorscheme gruvbox-baby\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/xander/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
-    url = "https://github.com/luisiacc/gruvbox-baby"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -204,14 +204,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: catppuccin
+time([[Config for catppuccin]], true)
+try_loadstring("\27LJ\2\nÿ\1\0\0\5\0\v\0\0266\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\5\0005\4\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\a\0005\4\b\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\t\0005\4\n\0B\0\4\1K\0\1\0\1\0\2\tbold\1\afg\f#928374\16LineNrBelow\1\0\2\tbold\2\afg\f#8ec07c\vLineNr\1\0\2\tbold\1\afg\f#928374\16LineNrAbove\16nvim_set_hl\bapi!colorscheme catppuccin-mocha\bcmd\bvim\0", "config", "catppuccin")
+time([[Config for catppuccin]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\nr\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\ropleader\1\0\1\ropleader\0\1\0\2\nblock\agb\tline\14<leader>/\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
--- Config for: gruvbox-baby
-time([[Config for gruvbox-baby]], true)
-try_loadstring("\27LJ\2\nû\1\0\0\5\0\v\0\0266\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\5\0005\4\6\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\a\0005\4\b\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\t\0005\4\n\0B\0\4\1K\0\1\0\1\0\2\afg\f#928374\tbold\1\16LineNrBelow\1\0\2\afg\f#8ec07c\tbold\2\vLineNr\1\0\2\afg\f#928374\tbold\1\16LineNrAbove\16nvim_set_hl\bapi\29colorscheme gruvbox-baby\bcmd\bvim\0", "config", "gruvbox-baby")
-time([[Config for gruvbox-baby]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

@@ -1,16 +1,15 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
+		
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
-
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  use ({'luisiacc/gruvbox-baby',
-  	as = 'gruvbox-baby',
+  use ({'catppuccin/nvim',
+  	as = 'catppuccin',
 	config = function()
-		 vim.cmd("colorscheme gruvbox-baby")
+		 vim.cmd("colorscheme catppuccin-mocha")
 		 vim.api.nvim_set_hl(0, 'LineNrAbove', { fg='#928374', bold=false })
 		 vim.api.nvim_set_hl(0, 'LineNr', { fg='#8ec07c', bold=true })
 		 vim.api.nvim_set_hl(0, 'LineNrBelow', { fg='#928374', bold=false })
@@ -74,5 +73,5 @@ return require('packer').startup(function(use)
   }
 
   use "m4xshen/autoclose.nvim"
-
   end)
+
