@@ -6,7 +6,7 @@ vim.cmd("set nuw=1")
 vim.cmd("set nowrap")
 vim.cmd("set smartcase ignorecase")
 vim.cmd("set tabstop=2 softtabstop=2 shiftwidth=2")
-    
+
 vim.opt.undofile = true
 vim.opt.hlsearch = true
 
@@ -66,14 +66,20 @@ cmp.setup({
   mapping = cmp.mapping.preset.insert({
     ['<Tab>'] = cmp_action.luasnip_supertab(),
     ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
+		['<CR>'] = cmp.mapping.confirm({select = false}),
   }),
-	mapping = cmp.mapping.preset.insert({
-			['<CR>'] = cmp.mapping.confirm({select = false}),
-		}),
   snippet = {
     expand = function(args)
       require('luasnip').lsp_expand(args.body)
     end,
   },
 })
+
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = {"*.c", "*.cpp", "*.h", "*.hpp"},
+  callback = function()
+    vim.cmd('noautocmd silent! %!clang-format -style=file')
+  end,
+})
+
 

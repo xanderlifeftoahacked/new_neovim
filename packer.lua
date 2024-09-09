@@ -1,5 +1,5 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
-		
+
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
@@ -50,6 +50,10 @@ return require('packer').startup(function(use)
 	  }
   }
 
+  use {"rhysd/vim-clang-format", 
+			requires = {"kana/vim-operator-user"}
+	}
+
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
@@ -73,5 +77,5 @@ return require('packer').startup(function(use)
   }
 
   use "m4xshen/autoclose.nvim"
-  end)
 
+  end)
