@@ -75,11 +75,11 @@ cmp.setup({
   },
 })
 
-vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = {"*.c", "*.cpp", "*.h", "*.hpp"},
+vim.api.nvim_create_augroup('AutoFormatting', {})
+vim.api.nvim_create_autocmd('BufWritePre', {
+  pattern = {"*.c", "*.cpp", "*.h", "*.hpp", "*.lua", "*.py"},
+  group = 'AutoFormatting',
   callback = function()
-    vim.cmd('noautocmd silent! %!clang-format -style=file')
+    vim.lsp.buf.format({ async = true })
   end,
 })
-
-
