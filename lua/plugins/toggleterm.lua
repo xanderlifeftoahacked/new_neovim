@@ -3,6 +3,7 @@ return {
     config = function()
         require("toggleterm").setup({
             size = 20,
+						shell = "fish",
         })
     end,
 }
