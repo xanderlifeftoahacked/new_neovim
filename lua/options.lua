@@ -1,7 +1,7 @@
 vim.opt.undofile = true
 vim.opt.hlsearch = true
 
-vim.cmd("set clipboard=unnamedplus")
+vim.cmd("set clipboard=unnamedplus") -- install xlip
 vim.cmd("set cmdheight=1")
 vim.cmd("set number relativenumber")
 vim.cmd("set cmdheight=0")
